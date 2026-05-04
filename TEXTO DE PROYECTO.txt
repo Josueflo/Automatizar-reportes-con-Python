@@ -1,0 +1,67 @@
+Descripción del proyecto
+
+Este proyecto es una solución de automatización de procesos de análisis de datos orientada a la gestión de bonos de empleados.
+Permite procesar información de ventas, calcular bonos, detectar anomalías mediante técnicas de análisis de datos y generar reportes automatizados en Excel y base de datos.
+El sistema integra Python, Pandas, SQL y lógica de negocio, simulando un flujo real de trabajo en un entorno corporativo.
+
+Objetivo
+Automatizar el cálculo de bonos de empleados en base a su rendimiento, garantizando:
+
+Limpieza y transformación de datos
+Cálculo automático de cumplimiento de metas
+Generación de bonos por rendimiento
+Detección de anomalías en los datos
+Exportación de resultados a Excel y base de datos SQL
+Tecnologías utilizadas
+Python
+Pandas
+SQLAlchemy
+OpenPyXL
+SQLite
+Programación modular
+Lógica de negocio aplicada
+
+Automatizacion Excel/
+│
+├── data/              # Archivos Excel de entrada
+├── database/          # Base de datos SQLite
+├── outputs/           # Resultados generados (Excel final)
+├── src/
+│   ├── main.py        # Script principal del proyecto
+│   ├── funciones.py   # Funciones de procesamiento
+│   └── modelo_ia.py   # Detección de anomalías y clasificación
+│
+├── env/               # Entorno virtual (crearlo READ_ME EN PYTHON)
+└── README.md
+
+Flujo del sistema
+Carga de datos
+-Lectura de archivos Excel desde la carpeta data/
+Limpieza de datos
+-Eliminación de valores nulos
+Normalización de columnas
+-Corrección de formatos numéricos
+Procesamiento
+-Cálculo de cumplimiento de metas
+Asignación de bonos por rendimiento
+-Análisis inteligente
+Detección de anomalías en datos
+-Clasificación de acciones recomendadas
+Almacenamiento
+-Guardado en base de datos SQLite
+Exportación a Excel final
+-Resultados generados
+
+El sistema produce un archivo Excel con:
+
+Detalle de empleados
+Resumen por áreas
+Resumen general de la empresa (KPIs)
+
+KPIs generados
+Provisión total de bonos
+Cumplimiento promedio de empleados
+Número de empleados evaluados
+Porcentaje con bono asignado
+
+
